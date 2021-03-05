@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Marvel Heroes</string>
+    <string name="about">About</string>
+    <string name="my_name">Muhammad Teddy Rahmansyah</string>
+    <string name="my_email">teddyrahsyah@gmail.com</string>
+    <string name="my_desc">I am a self-taught developer who learns programming by doing hands-on projects. Excel at using Python Django Framework to develop websites securely, fast, and scalable. I am a high enthusiast of technology and I love to learn something new every day</string>
+    <string name="list_mode">List Mode</string>
+    <string name="grid_mode">Grid Mode</string>
+    <string name="card_mode">Card Mode</string>
+    <string name="mode">Mode</string>
+    <string name="back_button">Back</string>
+    <string name="main_header">Main Header</string>
+    <string name="characters">Characters</string>
+    <string name="heroes_x_villains">#Heroes X Villains</string>
+    <string name="share_button_icon">Share Button Icon</string>
+    <string name="like_button_icon">Like Button Icon</string>
+    <string name="character_image">Character Image</string>
+    <string name="character_details">Character Details</string>
+    <string name="description">Description :</string>
+</resources>

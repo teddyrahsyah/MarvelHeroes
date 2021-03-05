@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    style="@style/ParentItemViewGroup.Cardview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_char_photo"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/character_image"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ironman" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/TextContent.Name"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/img_char_photo"
+            tools:text="Heroes" />
+
+        <TextView
+            android:id="@+id/tv_item_role"
+            style="@style/TextContent.Role"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_char_photo"
+            tools:text="Heroes" />
+
+        <TextView
+            android:id="@+id/tv_item_detail"
+            style="@style/TextContent.Detail"
+            android:layout_above="@+id/layout_button"
+            android:layout_below="@id/tv_item_role"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/img_char_photo"
+            android:maxLines="6"
+            tools:text="Detail" />
+
+        <RelativeLayout
+            android:id="@+id/layout_button"
+            style="@style/ParentItemViewGroup"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/img_char_photo">
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                style="@style/CardviewButton"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/share_button_icon"
+                android:src="@drawable/ic_share_icon" />
+
+            <ImageButton
+                android:id="@+id/btn_love"
+                style="@style/CardviewButton"
+                android:layout_toStartOf="@id/btn_share"
+                android:contentDescription="@string/like_button_icon"
+                android:src="@drawable/ic_love_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

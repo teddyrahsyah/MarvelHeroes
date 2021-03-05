@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ParentItemViewGroup"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_char_photo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        tools:src="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        style="@style/TextContent.Name"
+        android:layout_toEndOf="@+id/img_char_photo"
+        tools:text="Char Name" />
+
+    <TextView
+        android:id="@+id/tv_item_role"
+        style="@style/TextContent.Role"
+        android:layout_alignBottom="@id/tv_item_name"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/tv_item_name"
+        tools:text="(Char Role)" />
+
+    <TextView
+        android:id="@+id/tv_item_detail"
+        style="@style/TextContent.Detail"
+        android:layout_below="@id/tv_item_name"
+        android:layout_toEndOf="@+id/img_char_photo"
+        android:maxLines="2"
+        tools:text="Char Detail" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/img_char_photo"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray_dark" />
+</RelativeLayout>

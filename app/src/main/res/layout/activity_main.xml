@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout style="@style/ParentItemViewGroup">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/main_header"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/marvel_logo" />
+
+        <TextView
+            style="@style/TextContent"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/heroes_x_villains"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/TextContent"
+        android:layout_margin="8dp"
+        android:text="@string/characters"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_marvel"
+        style="@style/ParentItemViewGroup"
+        tools:listitem="@layout/item_row_marvel" />
+</LinearLayout>

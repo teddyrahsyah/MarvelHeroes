@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/about"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_view_list"
+        android:orderInCategory="100"
+        android:title="@string/mode"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_list"
+                android:title="@string/list_mode"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_grid"
+                android:title="@string/grid_mode"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_card"
+                android:title="@string/card_mode"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+
+</menu>
