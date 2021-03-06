@@ -31,3 +31,7 @@ dependencies {
     
 }
 ```
+
+## Usage
+
+After the application launch, it will generate a list of some Marvel Characther. you can change the mode by clicking the menu icon on the above right. there are 3 options there such as List Mode, Grid Mode, and Card Mode. If you click an item on the list, you will be directed to DetailView (using Intent) and the detail of the item you chose will appeared. there's a back button on above left beside Action Bar Title in order to navigate back to the MainActivity.
